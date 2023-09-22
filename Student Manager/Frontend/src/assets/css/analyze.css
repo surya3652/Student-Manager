@@ -1,0 +1,110 @@
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    margin-top: 80px;
+    margin-left: 30px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+    font-size:medium;
+  
+  }
+  .center-div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+  }
+  
+  .button:hover {
+    background-color: darkgreen;
+  }
+  
+  
+  .button:active {
+    transform: scale(0.95);
+  }
+  
+  .button:focus {
+    outline: none;
+  }
+  /* Apply styles to all input fields */
+input[type="text"],
+input[type="number"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Style when input is focused */
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Apply styles to buttons */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+/* Change button color on hover */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for labels */
+label {
+  font-weight: bold;
+}
+
+/* Add margin between elements */
+div {
+  margin-bottom: 20px;
+}
+
+.notification {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  padding: 25px;
+  border-radius: 5px;
+  z-index: 100;
+  width: 300px;
+  height: max-content;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.notification.success {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.notification.error {
+  background-color: #f44336;
+  color: #fff;
+}
